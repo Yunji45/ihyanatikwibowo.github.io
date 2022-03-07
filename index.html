@@ -124,7 +124,7 @@
                 <div class="services-block">
                   <i class="bi bi-binoculars"></i>
                   <span>MOBILE APPS</span>
-                  <p class="separator">Membuat sebuah aplikasi yang diinginkan oleh client dengan baik.t</p>
+                  <p class="separator">Membuat sebuah aplikasi yang diinginkan oleh client dengan baik.</p>
                 </div>
               </div>
               <!-- End testimonial item -->
@@ -238,29 +238,29 @@
               </div>
 
               <div class="col-lg-6">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form" name="Komentar-Portofolio">
                   <div class="row gy-3">
                     <div class="col-lg-6">
                       <div class="form-group contact-block1">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" nama="nama" required />
                       </div>
                     </div>
 
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" nama="email" required />
                       </div>
                     </div>
 
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" nama="subject" required />
                       </div>
                     </div>
 
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                        <textarea class="form-control" name="message" placeholder="Message" nama="komentar" required></textarea>
                       </div>
                     </div>
 
@@ -319,5 +319,18 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    //script komentar
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyF0ntk4vfNXRlUvA5IcIRC0dgKi3GymUe9s_qT3PMZQYyWHUtvozEB9GPtxewfr9BzbA/exec";
+      const form = document.forms["Komentar-Portofolio"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
