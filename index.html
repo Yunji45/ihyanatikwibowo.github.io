@@ -1,336 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Story shop</title>
 
-    <title>Ihya Natik Wibowo</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-    <!-- Favicons -->
-    <link href="assets/img/portfolio/icon.jpg" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet" />
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo"><img src="assets/img/portfolio/icon.jpg" alt="" class="img-fluid" /></a>
-        <!-- Uncomment below if you prefer to use an text logo -->
-        <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
+    <!-- header section starts  -->
 
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#portfolio">Project</a></li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/cafestory2.jpeg" alt="" />
+      </a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="images/cafemenu1.jpeg" alt="" />
+          <div class="content">
+            <h3>Robusta Raden</h3>
+            <div class="price">Rp.7500/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="images/cafemenu2.jpeg" alt="" />
+          <div class="content">
+            <h3>Jus Honde</h3>
+            <div class="price">Rp.10000/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="images/cafemenu3.jpeg" alt="" />
+          <div class="content">
+            <h3>Coffe Ruqyah</h3>
+            <div class="price">Rp.3000/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
       </div>
     </header>
-    <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <div id="hero" class="home">
-      <div class="container">
-        <div class="hero-content">
-          <h1>I'am <span class="typed" data-typed-items="Ihya Natik Wibowo, Designer, Developer, Freelancer"></span></h1>
-          <p>Designer, Developer, Freelancer</p>
+    <!-- header section ends -->
 
-          <ul class="list-unstyled list-social">
-            <li>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-github"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-            </li>
-          </ul>
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>#cafe story</h3>
+        <h1>Drink - Enjoy - Repeat</h1>
+        <p>"Storykan Kopimu"</p>
+        <a href="#" class="btn">get yours now</a>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span> us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/about-img.jpeg" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>Apa Itu Cafe Story?</h3>
+          <p>cafe story merupakan sebuah tempat bagi para kaum remaja milenial untuk ngopi, nongkrong, dll.</p>
+          <p>
+            disini melayani pemesanan online atau delivery order yang tersedia di coffe shop.Coffee shop adalah sebuah tempat yang menyediakan makanan dan minuman, namun utamanya menjual kopi. Umumnya, yang disebut dengan coffee shop,
+            adalah kedai minum kopi yang tempatnya didesain menarik dan menyediakan banyak menu kopi. Sejumlah tempat juga menyediakan menu kopi dengan berbagai macam cara menyeduhnya. Dari Robusta,Arabica , Bland dan lain-lain.
+          </p>
+          <a href="#" class="btn">learn more</a>
         </div>
       </div>
-    </div>
-    <!-- End Hero -->
+    </section>
 
-    <main id="main">
-      <!-- ======= About Section ======= -->
-      <div id="about" class="paddsection">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-lg-4">
-              <div class="div-img-bg">
-                <div class="about-img">
-                  <img src="assets/img/portfolio/icon.jpg" class="img-responsive" alt="me" />
-                </div>
-              </div>
-            </div>
+    <!-- about section ends -->
 
-            <div class="col-lg-7">
-              <div class="about-descr">
-                <p class="p-heading">Saya merupakan seorang fullstack web dan Apps. Saya menyukai UI/UX yang bersih ,sederhana dan unik.</p>
-                <p class="separator">
-                  Full stack developer adalah istilah untuk seorang programmer yang bisa menguasai software development mulai dari front end sampai back end. Didalam dunia pemrograman ada 2 istilah yang sering digunakan yaitu front end dan
-                  back end.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+      <h1 class="heading">our <span>menu</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/cafemenu1.jpeg" alt="" />
+          <h3>Robusta Raden</h3>
+          <div class="price">Rp.7500 <span>50 gr</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/cafemenu2.jpeg" alt="" />
+          <h3>Jus Honde</h3>
+          <div class="price">Rp.10000 <span>1 btl</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/cafemenu3.jpeg" alt="" />
+          <h3>Coffee Ruqyah</h3>
+          <div class="price">Rp.3000 <span>1 pcs</span></div>
+          <a href="#" class="btn">add to cart</a>
         </div>
       </div>
-      <!-- End About Section -->
+    </section>
 
-      <!-- ======= Services Section ======= -->
-      <div id="services">
-        <div class="container">
-          <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-briefcase"></i>
-                  <span>UI/UX DESIGN</span>
-                  <p class="separator">Membuat sebuah tampilan yang menarik untuk setiap project yang saya kerjakan.</p>
-                </div>
-              </div>
+    <!-- menu section ends -->
 
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-bar-chart"></i>
-                  <span>WEB DESIGN</span>
-                  <p class="separator">Membuat sebuah Website yang Dinamis dan Responsive yang akan membuat client sangat puas.</p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
+    <!-- review section starts  -->
 
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-binoculars"></i>
-                  <span>MOBILE APPS</span>
-                  <p class="separator">Membuat sebuah aplikasi yang diinginkan oleh client dengan baik.</p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
+    <section class="review" id="review">
+      <h1 class="heading">customer's <span>review</span></h1>
 
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-brightness-high"></i>
-                  <span>Analytics</span>
-                  <p class="separator">Menganalisa setiap perkembangan perangkat lunak dan bahasa pemograman yang terbaru.</p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-              <!-- End testimonial item -->
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-      <!-- End Services Section -->
-
-      <!-- ======= Portfolio Section ======= -->
-      <div id="portfolio" class="paddsection">
-        <div class="container">
-          <div class="section-title text-center">
-            <h2>My Project</h2>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/quote-img.png" alt="" class="quote" />
+          <p>Pertama datang ke cafe ini kesan pertama yang saya rasakan suasana nya begitu nyaman. Dari segi pelayanan sangat ramah, harga product disini terjangkau bagi semua kalangan yang suka nongkrong.</p>
+          <h3>Joko</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
         </div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-web">Web</li>
-              </ul>
-            </div>
+        <div class="box">
+          <img src="images/quote-img.png" alt="" class="quote" />
+          <p>dengan harga terjangkau saya dapat rasa yang kualitas yang bisa bersaing dengan kedai-kedai kopi yang lain.</p>
+          <h3>Miftahul</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
+        </div>
 
-          <div class="row portfolio-container">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
+        <div class="box">
+          <img src="images/quote-img.png" alt="" class="quote" />
+          <p>di tempat ini menyediakan berbagai jenis biji kopi baik dari robusta maupun arabica sebagai best sellernya cafe story.</p>
+          <h3>Rahmat</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
         </div>
       </div>
-      <!-- End Portfolio Section -->
+    </section>
 
-      <!-- ======= Contact Section ======= -->
-      <div id="contact" class="paddsection">
-        <div class="container">
-          <div class="contact-block1">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="contact-contact">
-                  <h2 class="mb-30">GET IN TOUCH</h2>
+    <!-- review section ends -->
 
-                  <ul class="contact-details">
-                    <li><span>Jalan Banjarsari Pangandaran</span></li>
-                    <li><span>Ciamis ,Jawa Barat, 46382</span></li>
-                    <li><span>+6282317904234</span></li>
-                    <li><span>ihyanatikwibowo@gmail.com</span></li>
-                  </ul>
-                </div>
-              </div>
+    <!-- contact section starts  -->
 
-              <div class="col-lg-6">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form" name="Komentar-Portofolio">
-                  <div class="row gy-3">
-                    <div class="col-lg-6">
-                      <div class="form-group contact-block1">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" nama="nama" required />
-                      </div>
-                    </div>
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.896358489062!2d108.60053371477618!3d-7.47669619460663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e658f5c15c779eb%3A0x6c6a3c936b7a627c!2s%23cafestory!5e0!3m2!1sid!2sid!4v1649177920334!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
 
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" nama="email" required />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" nama="subject" required />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Message" nama="komentar" required></textarea>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-
-                    <div class="mt-0">
-                      <input type="submit" class="btn btn-defeault btn-send" value="Send message" />
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+        <form action="">
+          <h3>get in touch</h3>
+          <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="name" />
           </div>
-        </div>
+          <div class="inputBox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="inputBox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="number" />
+          </div>
+          <input type="submit" value="contact now" class="btn" />
+        </form>
       </div>
-      <!-- End Contact Section -->
-    </main>
-    <!-- End #main -->
+    </section>
 
-    <!-- ======= Footer ======= -->
-    <div id="footer" class="text-center">
-      <div class="container">
-        <div class="socials-media text-center">
-          <ul class="list-unstyled">
-            <li>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-github"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="credits">
-          <a>Created By Ihya Natik Wibowo</a>
-        </div>
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="https://instagram.com/cafestory10?utm_medium=copy_link" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" class="fab fa-linkedin"></a>
       </div>
-    </div>
-    <!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <div class="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">menu</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+      </div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+      <div class="credit">created by <span>Cafe Story</span> | @2022 Hak Cipta Dilindungi</div>
+    </section>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <!-- footer section ends -->
 
-    //script komentar
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyF0ntk4vfNXRlUvA5IcIRC0dgKi3GymUe9s_qT3PMZQYyWHUtvozEB9GPtxewfr9BzbA/exec";
-      const form = document.forms["Komentar-Portofolio"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
   </body>
 </html>
